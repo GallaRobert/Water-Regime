@@ -1,11 +1,11 @@
-Water Regime Model
-Definition:
+# Water Regime Model
+# Definition:
 The water regime is the prevailing water flow pattern over time. More specifically, it refers to the duration and timing of flooding resulting from surface water (overland flow), or precipitation
-Alternate Wetting and Drying (AWD):
+# Alternate Wetting and Drying (AWD):
 is an irrigation method where water is applied a few days after ponded water disappears.
 AWD can be assessed using Traditional methods such as small sample surveys, expert interviews, or household surveys. Nevertheless, it is time-consuming, costly, and subjective.
 Currently, Remote Sensing is being used for AWD monitoring; it has more advantages than the traditional method. For instance, Sentinel-1 radar data enables change detection in a time-series Wetness Index (WI)and helps determine AWD adoption across large geographic areas efficiently.
-AWD Model Development:
+# AWD Model Development:
 Figure (1) below illustrates the process of the AWD model, which used Sentinel 1 to calculate the Wetness Index (WI), create WI time series change detection, and develop a classification scheme to average the change index across time.
  
 Figure 1 AWD Model schematic 
