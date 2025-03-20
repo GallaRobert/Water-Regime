@@ -18,26 +18,26 @@ Wetness Index (WI) is an index that is used to measure the Soil Water Content an
 WI = (VV- min)/ (max-min)
 WI negative values represent dryness, and positive values represent wetness 
 AWD Model Process:
-1-	Define parameters (startDate and endDate)
-2-	Load sentinel1image collection and filtering using relativeOrbitNumber_start , 32 to get images from one orbit.
-3-	Aggregate to 7-day composites remove empty composites and create a collection image 
-4-	Convert Sigma0 to Beta0 (Beta = Sigma0 / cos(incidence_angle)), apply calibration and median smoothing
-5-	Compute min and max for normalization
-6-	Compute the wetness index (WI)
-7-	Create WI change between consecutive acquisition
-8-	Load and filter the dynamic world collection
-9-	Extract crops and flooded vegetation 
-10-	Create I change between consecutive acquisitions (for crops only)
-11-	Compute the average WI change for crops
-12-	Make a classification based on WI change (only for crops areas)
-13-	Smoothed WI change for crops
-14-	Compute area per pixel in square kilometres  
-15-	Compute the total area per class
-16-	Extract class areas and format data for plotting
-17-	Create a function to format class names and areas 
-18-	 Apply function to each element in class data 
-19-	Get data from the feature collection 
-20-	Define colours for the classes and plot the pie chart  
+#1-	Define parameters (startDate and endDate)
+#2-	Load sentinel1image collection and filtering using relativeOrbitNumber_start , 32 to get images from one orbit.
+#3-	Aggregate to 7-day composites remove empty composites and create a collection image 
+#4-	Convert Sigma0 to Beta0 (Beta = Sigma0 / cos(incidence_angle)), apply calibration and median smoothing
+#5-	Compute min and max for normalization
+#6-	Compute the wetness index (WI)
+#7-	Create WI change between consecutive acquisition
+#8-	Load and filter the dynamic world collection
+#9-	Extract crops and flooded vegetation 
+#10-	Create I change between consecutive acquisitions (for crops only)
+#11-	Compute the average WI change for crops
+#12-	Make a classification based on WI change (only for crops areas)
+#13-	Smoothed WI change for crops
+#14-	Compute area per pixel in square kilometres  
+#15-	Compute the total area per class
+#16-	Extract class areas and format data for plotting
+#17-	Create a function to format class names and areas 
+#18-	 Apply function to each element in class data 
+#19-	Get data from the feature collection 
+#20-	Define colours for the classes and plot the pie chart  
 
 
 
